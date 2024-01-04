@@ -2,6 +2,9 @@ import pandas as pd
 import streamlit as st
 import time
 from model import heart_disease
+from imblearn.over_sampling import SMOTE
+from sklearn.metrics import accuracy_score
+
 
 
 df_clean = pd.read_csv("data_hungarian/hungarian_clean.csv")
